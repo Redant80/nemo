@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 115px;
+    padding: 0 20px; 
+    box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.header-line {
+    display: flex;
+    align-items: center; 
+}
+
+.logo img {
+    width: 100px;
+    height: auto; 
+    margin-right: 15px; 
+}
+
+.title_name {
+    font-size: 24px; 
+    text-decoration: none;
+    color: black;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.logout-btn img {
+    width: 24px; 
+    height: auto; 
+}
+
+.menu-items{
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.menu-btn{
+    color: #fdbd3a;
+    text-decoration: none;
+    margin-left: 45px;
+    transition: .3s;
+    position: relative;
+}
+
+.menu-btn:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    margin-top: 2px;
+    height: 2px;
+    background-color: #f9a800;
+    content: "";
+    transition: width .3s ease-out;
+}
+
+.menu-btn:hover:after, a:focus:after{
+    width: 100%;
+}
+
+.menu-btn:hover{
+    color: #f9a800;
+}
+
+
+.auth_container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_form{
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 4px 4px #00000040;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.auth_input{
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 300px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    transition: .5s;
+}
+
+.auth_input:focus{
+    border-bottom: 1px solid rgb(219, 160, 50);
+}
+
+.btn_reg{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(219, 160, 50);
+    transition: .5s;
+    font-size: 15px;
+    margin-top: 15px;
+    border: 0;
+}
+
+
+.pole{
+    font-size: 10px;
+}
+
+.btn_log{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(219, 160, 50);
+    transition: .5s;
+    font-size: 15px;
+    margin-top: 15px;
+    border: 0;
+}
+
+.btn_log:hover, .btn_reg:hover{
+    background-color: rgb(189, 128, 15);
+    cursor: pointer;
+}
+
+.h1_login{
+    margin-bottom: 20px;
+}
+
+.not_account, .btn_p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.not_account, .btn_login a{
+    text-decoration: none;
+    color: orange;
+    transition: .5s;
+}
+
+.not_account, .btn_login a:hover{
+    color: #1c3a72;
+}
+
+
+.reg_form{
+    height: 600px;
+}
+
+.message{
+    color: red;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Button logout */
+
+.logout-btn {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+}
+
+.logout-btn img {
+    width: 35px; 
+    height: 65px; 
+}
+
+
+.order-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1250px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Позволяет изменять размер только по вертикали */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства между элементами */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin-bottom: 15px; /* Отступ между строками */
+}
+
+.left-column {
+    flex: 1; /* Занимает оставшееся пространство */
+    margin-right: 10px; /* Отступ между колонками */
+}
+
+.center-column {
+    flex: 1; /* Занимает оставшееся пространство */
+    margin: 0 10px; /* Отступы слева и справа */
+}
+
+.right-column {
+    flex: 1; /* Занимает оставшееся пространство */
+    margin-left: 10px; /* Отступ между колонками */
+}
+
+.submit-btn {
+    background-color: #fdbd3a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Кнопка занимает всю ширину */
+}
+
+.submit-btn:hover {
+    background-color: #f9a800; /* Изменение цвета при наведении */
+}
+
+
+.horder-container{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.h-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    margin-top: 20px;
+}
+.horder-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Цвет заголовка */
+}
+table {
+    width: 90%; /* Ширина таблицы */
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Цвет фона таблицы */
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #fdbd3a; /* Цвет фона заголовков */
+    color: white; /* Цвет текста заголовков */
+}
+tr:hover {
+    background-color: #f1f1f1; /* Цвет строки при наведении */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Цвет четных строк */
+}
+tr:nth-child(odd) {
+    background-color: #fff; /* Цвет нечетных строк */
+}
+
+
+
+.admin-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    margin-top: 20px;
+}
+.ad-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Цвет заголовка */
+}
+
+.status-select {
+    width: 100%; /* Полная ширина для выпадающего списка */
+}
+
+.reason-input {
+    display: none; /* Скрыто по умолчанию */
+    width: 100%;
+    margin-top: 5px;
+}
+
+.update-button {
+    display: none; /* Скрыто по умолчанию */
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.update-button:hover {
+    background-color: #45a049;
+}
